@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import moment from "moment";
 import {user} from "../store/currentUser";
 import {useHistory} from 'react-router-dom'
+import PageTitle from "../components/PageTitle";
 
 const CreatePost = () => {
     const [title, setTitle] = useState('');
@@ -43,6 +44,7 @@ const CreatePost = () => {
 
     return (
         <div className="create-post container">
+            <PageTitle title="Create post"/>
             <form onSubmit={handleFormSubmit}>
                 <div className="form-group">
                     <input
