@@ -7,7 +7,7 @@ const postsMock = JSON.parse(localStorage.getItem('posts')) || [
         title: 'Title 1',
         authorId: 1,
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deleniti ipsa magnam quae quo totam. Architecto, dignissimos dolor ducimus harum, itaque laudantium necessitatibus nobis nostrum quas, quisquam saepe vero.',
-        createdAt: moment().format(),
+        createdAt: moment().format('lll'),
     },
     {
         id: 2,
@@ -33,35 +33,35 @@ const postsMock = JSON.parse(localStorage.getItem('posts')) || [
             '                    perspiciatis rerum sed voluptatum! Architecto consequuntur itaque minima optio pariatur perspiciatis\n' +
             '                    quae repellendus, sapiente tempora voluptas voluptate?\n' +
             '                </div>',
-        createdAt: moment().format(),
+        createdAt: moment().format('lll'),
     },
     {
         id: 3,
         title: 'Title 3',
         authorId: 2,
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deleniti ipsa magnam quae quo totam. Architecto, dignissimos dolor ducimus harum, itaque laudantium necessitatibus nobis nostrum quas, quisquam saepe vero.',
-        createdAt: moment().format(),
+        createdAt: moment().format('lll'),
     },
     {
         id: 4,
         title: 'Title 4',
         authorId: 1,
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deleniti ipsa magnam quae quo totam. Architecto, dignissimos dolor ducimus harum, itaque laudantium necessitatibus nobis nostrum quas, quisquam saepe vero.',
-        createdAt: moment().format(),
+        createdAt: moment().format('lll'),
     },
     {
         id: 5,
         title: 'Title 5',
         authorId: 2,
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deleniti ipsa magnam quae quo totam. Architecto, dignissimos dolor ducimus harum, itaque laudantium necessitatibus nobis nostrum quas, quisquam saepe vero.',
-        createdAt: moment().format(),
+        createdAt: moment().format('lll'),
     },
     {
         id: 6,
         title: 'Title 6',
         authorId: 1,
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deleniti ipsa magnam quae quo totam. Architecto, dignissimos dolor ducimus harum, itaque laudantium necessitatibus nobis nostrum quas, quisquam saepe vero.',
-        createdAt: moment().format(),
+        createdAt: moment().format('lll'),
     },
 ];
 
@@ -77,5 +77,6 @@ const slice = createSlice({
 });
 
 export const posts = state => state.posts;
+export const {create} = slice.actions;
 
 export default slice.reducer

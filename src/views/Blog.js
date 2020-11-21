@@ -9,7 +9,7 @@ const Blog = () => {
     let blogPosts = useSelector(posts);
     const currentUser = useSelector(user);
 
-    const [currentUserOnly, setCurrentUserOnly] = useState(true);
+    const [currentUserOnly, setCurrentUserOnly] = useState(false);
 
     if(currentUserOnly) {
         blogPosts = blogPosts.filter((post) => post.authorId === currentUser.id);
