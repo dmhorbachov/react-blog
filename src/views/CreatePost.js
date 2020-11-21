@@ -25,6 +25,12 @@ const CreatePost = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
+
+        if(!title || !body) {
+            alert("Either title or body is empty");
+            return;
+        }
+
         dispatch(create({
             title,
             body,
