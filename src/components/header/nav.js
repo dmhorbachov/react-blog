@@ -9,7 +9,7 @@ const NavItem = ({author, currentUser, onUserClick}) => {
 
     return (
         <div
-            className={'nav-item btn mr-2 ' + (isCurrentUser(currentUser, author) ? 'btn-primary' : 'btn-light')}
+            className={'nav-item btn mr-2 ' + (isCurrentUser(currentUser, author) ? 'btn-dark' : 'btn-light')}
             data-author={author.id}
             onClick={switchUser}
         >

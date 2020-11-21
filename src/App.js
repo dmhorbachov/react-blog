@@ -9,17 +9,17 @@ import Header from "./components/header/index";
 function App() {
   return (
     <div className="App">
-      <Header/>
       <Router>
+          <Header/>
           <Switch>
-              <Route path='/'>
-                  <Blog/>
-              </Route>
-              <Route path='/post/{id}'>
+              <Route path='/post/:id'>
                   <SinglePost/>
               </Route>
               <Route path='/create-post'>
                   <CreatePost/>
+              </Route>
+              <Route path='/'>
+                  <Blog/>
               </Route>
           </Switch>
       </Router>

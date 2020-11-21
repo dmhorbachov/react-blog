@@ -8,6 +8,7 @@ import {
     user
 } from '../../store/currentUser'
 import NavItem from "./nav";
+import {Link} from "react-router-dom";
 
 const Index = () => {
     const authors = useSelector(blogAuthors);
@@ -35,10 +36,13 @@ const Index = () => {
                                 onUserClick={switchUser}
                             />
                         ))}
+                        <Link to='/'><span className="btn btn-primary">To Blog</span></Link>
                     </div>
                 </div>
                 <div className="col-4 d-flex justify-content-end">
-                    <div className="btn btn-info mr-3">Create Post</div>
+                    <Link to='/create-post'>
+                        <span className="btn btn-info mr-3">Create Post</span>
+                    </Link>
                     <span className="pt-2">Logged in as: {currentUser.name}</span>
                 </div>
             </div>

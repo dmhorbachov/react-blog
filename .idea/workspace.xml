@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9cdfd084-b3d0-49e2-94f2-99183c4f6eaf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/blog/single.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/single.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SinglePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SinglePost.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605949682234</updated>
-      <workItem from="1605949684681" duration="14778000" />
+      <workItem from="1605949684681" duration="15967000" />
     </task>
     <servers />
   </component>
