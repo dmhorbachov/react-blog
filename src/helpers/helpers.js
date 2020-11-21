@@ -1,0 +1,1 @@
+export const isCurrentUser = (user, author) => user && (user.id === author.id);
