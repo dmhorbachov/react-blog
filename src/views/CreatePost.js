@@ -5,12 +5,14 @@ import moment from "moment";
 import {user} from "../store/currentUser";
 import {useHistory} from 'react-router-dom'
 import PageTitle from "../components/PageTitle";
+import {posts} from "../store/posts";
 
 const CreatePost = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
 
     const currentUser = useSelector(user);
+    const blogPosts = useSelector(posts);
     const dispatch = useDispatch();
     let history = useHistory();
 
@@ -33,6 +35,7 @@ const CreatePost = () => {
         }
 
         dispatch(create({
+            id: blogPosts.length + 1,
             title,
             body,
             createdAt: moment().format('lll'),
